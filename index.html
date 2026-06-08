@@ -4,23 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NotaryFlow | Cyfrowe prowadzenie spraw notarialnych</title>
-  <meta name="description" content="NotaryFlow porządkuje proces sprzedaży nieruchomości w kancelarii notarialnej: sprawy, dokumenty, klienci, terminy i komunikację w jednym miejscu." />
+  <meta name="description" content="NotaryFlow porządkuje proces sprzedaży nieruchomości w kancelarii notarialnej: sprawy, dokumenty, komunikację i statusy w jednym miejscu." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="assets/logo-square.jpeg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="NotaryFlow">
-        <span class="brand-mark">NF</span>
-        <span class="brand-text">NotaryFlow</span>
+        <img src="assets/logo-square.jpeg" alt="NotaryFlow logo" />
+        <span>NotaryFlow</span>
       </a>
-      <nav class="nav-links" aria-label="Główna nawigacja">
+      <nav class="nav-links" aria-label="Nawigacja">
         <a href="#problem">Problem</a>
         <a href="#platforma">Platforma</a>
-        <a href="#proces">Proces</a>
+        <a href="#pilotaż">Pilotaż</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
       <a class="nav-cta" href="#kontakt">Zgłoś kancelarię</a>
@@ -28,155 +29,183 @@
   </header>
 
   <main id="top">
-    <section class="hero section">
+    <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">Legal-tech dla kancelarii notarialnych</div>
+          <div class="eyebrow">
+            <span></span>
+            Legal-tech dla kancelarii notarialnych
+          </div>
           <h1>Cyfrowe prowadzenie spraw notarialnych.</h1>
-          <p class="lead">NotaryFlow porządkuje proces sprzedaży nieruchomości: dokumenty, komunikację ze stronami, statusy spraw i przygotowanie aktu w jednym, bezpiecznym miejscu.</p>
+          <p class="lead">NotaryFlow porządkuje proces sprzedaży nieruchomości w kancelarii. Sprawy, dokumenty, komunikacja i statusy trafiają do jednego, bezpiecznego miejsca.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#kontakt">Dołącz do pilotażu</a>
-            <a class="button secondary" href="mailto:kontakt@notaryflow.pl">kontakt@notaryflow.pl</a>
+            <a class="btn primary" href="#kontakt">Dołącz do pilotażu</a>
+            <a class="btn secondary" href="#platforma">Zobacz platformę</a>
           </div>
           <div class="trust-row">
-            <span>Produkt w przygotowaniu</span>
-            <span>Pilotaż z kancelariami</span>
-            <span>SaaS dla notariuszy</span>
+            <div><strong>1</strong><span>panel dla kancelarii</span></div>
+            <div><strong>1</strong><span>link dla klienta</span></div>
+            <div><strong>100%</strong><span>większa kontrola procesu</span></div>
           </div>
         </div>
 
-        <div class="product-preview" aria-label="Podgląd panelu NotaryFlow">
-          <div class="browser-bar">
-            <span></span><span></span><span></span>
-            <p>app.notaryflow.pl</p>
+        <div class="hero-visual" aria-label="Podgląd platformy NotaryFlow">
+          <div class="browser-frame">
+            <div class="browser-top">
+              <div class="dots"><i></i><i></i><i></i></div>
+              <span>app.notaryflow.pl</span>
+            </div>
+            <img src="assets/notary-panel.png" alt="Panel kancelarii NotaryFlow z dokumentami i postępem transakcji" />
           </div>
-          <div class="app-shell">
-            <aside class="sidebar">
-              <div class="mini-logo">NF</div>
-              <a class="active">Sprawy</a>
-              <a>Dokumenty</a>
-              <a>Klienci</a>
-              <a>Wersje robocze</a>
-              <a>Kalendarz</a>
-            </aside>
-            <div class="dashboard">
-              <div class="dash-top">
-                <div>
-                  <span class="small-label">Dzisiaj</span>
-                  <h3>Aktywne sprawy</h3>
-                </div>
-                <button>Nowa sprawa</button>
-              </div>
-              <div class="stats">
-                <div><strong>18</strong><span>w toku</span></div>
-                <div><strong>7</strong><span>braki</span></div>
-                <div><strong>4</strong><span>podpisy</span></div>
-              </div>
-              <div class="case-card priority">
-                <div>
-                  <strong>Sprzedaż lokalu, Mokotów</strong>
-                  <span>Akt: 14 czerwca, 12:00</span>
-                </div>
-                <em>Wymaga uwagi</em>
-              </div>
-              <div class="case-card">
-                <div>
-                  <strong>Zakup mieszkania, Wola</strong>
-                  <span>Dokumenty zaakceptowane</span>
-                </div>
-                <em class="ok">Gotowe</em>
-              </div>
-              <div class="document-box">
-                <h4>Dokumenty do weryfikacji</h4>
-                <div class="doc-line"><span>Zaświadczenie o braku zaległości</span><b>Nowe</b></div>
-                <div class="doc-line"><span>Podstawa nabycia</span><b>OK</b></div>
-                <div class="doc-line"><span>Zaświadczenie o zameldowaniu</span><b>Brak</b></div>
-              </div>
+          <div class="floating-card">
+            <img src="assets/logo-square.jpeg" alt="" />
+            <div>
+              <strong>Dokument wymaga korekty</strong>
+              <span>Klient otrzymał automatyczną informację.</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="problem" class="section problem">
-      <div class="container narrow">
-        <div class="section-heading">
-          <span class="eyebrow">Problem</span>
-          <h2>Proces notarialny nadal opiera się na mailach, telefonach i ręcznym pilnowaniu braków.</h2>
-          <p>NotaryFlow ma pomóc kancelarii szybciej prowadzić sprawy i ograniczyć chaos organizacyjny po stronie klientów, pośredników i kancelarii.</p>
-        </div>
-        <div class="cards three">
-          <article class="card"><span>01</span><h3>Rozproszone dokumenty</h3><p>Pliki trafiają w wielu mailach, w różnych wersjach i od kilku stron jednocześnie.</p></article>
-          <article class="card"><span>02</span><h3>Brak jednego statusu</h3><p>Trudno od razu sprawdzić, czego brakuje i kto powinien wykonać kolejny krok.</p></article>
-          <article class="card"><span>03</span><h3>Czas tracony na przypomnienia</h3><p>Kancelaria musi ręcznie przypominać o dokumentach, terminach i poprawkach.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="platforma" class="section platform">
+    <section id="problem" class="section problem-section">
       <div class="container split">
-        <div class="section-heading left">
-          <span class="eyebrow">Platforma</span>
-          <h2>Jedno miejsce do prowadzenia sprawy od pierwszego kontaktu do podpisania aktu.</h2>
-          <p>System projektowany z myślą o realnym workflow kancelarii notarialnej przy sprzedaży nieruchomości.</p>
+        <div>
+          <p class="section-label">Problem</p>
+          <h2>Proces sprzedaży mieszkania nadal często żyje w mailach, telefonach i folderach.</h2>
         </div>
-        <div class="feature-list">
-          <div><strong>Sprawy</strong><span>statusy, terminy, strony transakcji i odpowiedzialności</span></div>
-          <div><strong>Dokumenty</strong><span>wysyłka, weryfikacja, komentarze i historia zmian</span></div>
-          <div><strong>Klienci</strong><span>panel dla sprzedającego, kupującego i pośrednika</span></div>
-          <div><strong>Automatyzacja</strong><span>przypomnienia, braki, powiadomienia i kontrola procesu</span></div>
+        <div class="problem-list">
+          <article><span>01</span><p>Dokumenty są dosyłane w kilku wiadomościach, bez jednego aktualnego statusu.</p></article>
+          <article><span>02</span><p>Kancelaria ręcznie pilnuje braków, korekt, terminów i komunikacji ze stronami.</p></article>
+          <article><span>03</span><p>Klient nie wie, co już zostało zaakceptowane, a co dalej blokuje podpisanie aktu.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="proces" class="section process">
+    <section id="platforma" class="section platform-section">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="section-label">Platforma</p>
+          <h2>Profesjonalny panel dla kancelarii i prosty widok dla klienta.</h2>
+          <p>NotaryFlow ma wspierać kancelarię bez zmieniania całego sposobu pracy z dnia na dzień.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article>
+            <div class="icon">S</div>
+            <h3>Sprawy</h3>
+            <p>Lista aktywnych transakcji, statusy, terminy podpisania i uczestnicy procesu.</p>
+          </article>
+          <article>
+            <div class="icon">D</div>
+            <h3>Dokumenty</h3>
+            <p>Jedno miejsce do przesyłania, akceptowania, komentowania i pobierania dokumentów.</p>
+          </article>
+          <article>
+            <div class="icon">K</div>
+            <h3>Klienci</h3>
+            <p>Sprzedający, kupujący, pośrednik i kancelaria widzą wyłącznie potrzebne informacje.</p>
+          </article>
+          <article>
+            <div class="icon">A</div>
+            <h3>Automatyzacja</h3>
+            <p>Przypomnienia, statusy braków i jasne komunikaty o kolejnym kroku.</p>
+          </article>
+        </div>
+
+        <div class="showcase">
+          <div class="showcase-copy">
+            <p class="section-label">Widok klienta</p>
+            <h3>Klient dostaje jasną instrukcję, a kancelaria mniej telefonów.</h3>
+            <p>Panel klienta pokazuje postęp transakcji, pilne braki i konkretne dokumenty do wgrania. Bez szukania maili i bez niejasnych wiadomości.</p>
+          </div>
+          <div class="client-frame">
+            <img src="assets/client-panel.png" alt="Panel klienta NotaryFlow z postępem transakcji i listą dokumentów do wgrania" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workflow-section">
       <div class="container">
         <div class="section-heading">
-          <span class="eyebrow">Workflow</span>
-          <h2>Prosty proces dla kancelarii i stron transakcji.</h2>
+          <p class="section-label">Workflow</p>
+          <h2>Od założenia sprawy do podpisania aktu.</h2>
         </div>
         <div class="steps">
           <div><span>1</span><p>Założenie sprawy</p></div>
           <div><span>2</span><p>Zaproszenie stron</p></div>
-          <div><span>3</span><p>Uzupełnienie danych</p></div>
-          <div><span>4</span><p>Wgranie dokumentów</p></div>
-          <div><span>5</span><p>Weryfikacja</p></div>
-          <div><span>6</span><p>Podpisanie aktu</p></div>
+          <div><span>3</span><p>Wgranie dokumentów</p></div>
+          <div><span>4</span><p>Weryfikacja kancelarii</p></div>
+          <div><span>5</span><p>Projekt aktu</p></div>
+          <div><span>6</span><p>Podpisanie</p></div>
         </div>
       </div>
     </section>
 
-    <section id="kontakt" class="section contact">
-      <div class="container contact-grid">
+    <section id="pilotaż" class="section pilot-section">
+      <div class="container pilot-card">
         <div>
-          <span class="eyebrow">Program pilotażowy</span>
-          <h2>Zgłoś kancelarię do rozmowy.</h2>
-          <p>Aktualnie rozwijamy pierwszą wersję NotaryFlow i szukamy kancelarii, które chcą zobaczyć makietę, opowiedzieć o swoim procesie i sprawdzić możliwość pilotażu.</p>
-          <div class="contact-note">
-            <strong>Kontakt bezpośredni</strong>
+          <p class="section-label light">Program pilotażowy</p>
+          <h2>Szukamy kancelarii do pierwszych wdrożeń.</h2>
+          <p>Rozwijamy NotaryFlow razem z praktykami. Jeżeli chcesz sprawdzić, jak taki system mógłby działać w Twojej kancelarii, zostaw kontakt.</p>
+        </div>
+        <a class="btn light-btn" href="#kontakt">Zgłoś kancelarię</a>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="section-label">Kontakt</p>
+          <h2>Zgłoś kancelarię do rozmowy pilotażowej.</h2>
+          <p>Formularz trafi na mail kontaktowy projektu. Po wysłaniu wiadomości odezwiemy się z propozycją krótkiej rozmowy.</p>
+          <div class="contact-mail">
+            <span>Email</span>
             <a href="mailto:kontakt@notaryflow.pl">kontakt@notaryflow.pl</a>
           </div>
         </div>
+
         <form class="contact-form" action="https://formsubmit.co/kontakt@notaryflow.pl" method="POST">
-          <input type="hidden" name="_subject" value="Nowe zgłoszenie kancelarii | NotaryFlow">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <label>Imię i nazwisko<input name="Imię i nazwisko" type="text" placeholder="Jan Kowalski" required></label>
-          <label>Nazwa kancelarii<input name="Kancelaria" type="text" placeholder="Kancelaria Notarialna..." required></label>
-          <label>E-mail<input name="Email" type="email" placeholder="adres@email.pl" required></label>
-          <label>Telefon<input name="Telefon" type="tel" placeholder="+48 000 000 000"></label>
-          <label>Wiadomość<textarea name="Wiadomość" rows="4" placeholder="Krótko opisz, czym jesteś zainteresowany."></textarea></label>
-          <button class="button primary form-button" type="submit">Wyślij zgłoszenie</button>
-          <p class="form-small">Formularz wysyła zgłoszenie na adres kontakt@notaryflow.pl. Przy pierwszym użyciu FormSubmit może poprosić o jednorazowe potwierdzenie adresu.</p>
+          <input type="hidden" name="_subject" value="Nowe zgłoszenie kancelarii NotaryFlow" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <label>
+            Imię i nazwisko
+            <input type="text" name="Imię i nazwisko" placeholder="np. Anna Kowalska" required />
+          </label>
+          <label>
+            Nazwa kancelarii
+            <input type="text" name="Kancelaria" placeholder="np. Kancelaria Notarialna Kowalska" required />
+          </label>
+          <div class="form-row">
+            <label>
+              Email
+              <input type="email" name="Email" placeholder="email@kancelaria.pl" required />
+            </label>
+            <label>
+              Telefon
+              <input type="tel" name="Telefon" placeholder="+48 000 000 000" />
+            </label>
+          </div>
+          <label>
+            Wiadomość
+            <textarea name="Wiadomość" rows="4" placeholder="Napisz krótko, jak obecnie prowadzicie sprawy i co byłoby największym usprawnieniem."></textarea>
+          </label>
+          <button class="btn primary full" type="submit">Wyślij zgłoszenie</button>
+          <p class="form-note">Wysyłając formularz, wyrażasz zgodę na kontakt w sprawie projektu NotaryFlow.</p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <a class="brand" href="#top"><span class="brand-mark">NF</span><span class="brand-text">NotaryFlow</span></a>
-      <p>Legal-tech startup w trakcie rozwoju produktu.</p>
+    <div class="container footer-grid">
+      <div class="brand footer-brand">
+        <img src="assets/logo-square.jpeg" alt="NotaryFlow logo" />
+        <span>NotaryFlow</span>
+      </div>
+      <p>Legal-tech startup w fazie rozwoju produktu.</p>
       <a href="mailto:kontakt@notaryflow.pl">kontakt@notaryflow.pl</a>
     </div>
   </footer>
